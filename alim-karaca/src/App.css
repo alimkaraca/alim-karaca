@@ -18,3 +18,12 @@
 .gradient{
   background-image: radial-gradient(ellipse at bottom, #1b2735 15%, #090a0f 100%)
 }
+
+.designsvg {
+  width: 70px;
+}
+
+.designshadow{
+
+  text-shadow: 2px 8px 20px #16A34A;
+}
