@@ -7,11 +7,11 @@ const Navbar = () => {
       alim_karaca
     </p>
     <div className='flex justify-end text-center'>
-    <div className='navbtn'>home /</div>
-    <div className='navbtn'>expertise /</div>
-    <div className='navbtn'>work /</div>
-    <div className='navbtn'>experience /</div>
-    <div className='navbtn mr-16'>contact /</div>
+    <div className='navbtn'>home/</div>
+    <div className='navbtn'>expertise/</div>
+    <div className='navbtn'>work/</div>
+    <div className='navbtn'>experience/</div>
+    <div className='navbtn mr-16'>contact/</div>
     </div>
     </div>
   )

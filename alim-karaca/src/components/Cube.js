@@ -84,7 +84,7 @@ const MouseCube = () => {
         geometry={new EdgesGeometry(new BoxGeometry(1, 1, 1))}
         material={new LineBasicMaterial({ color: 0x0000ff })}
       />
-      <mesh ref={sphereRef} position={[0, 0, 0]}>
+      <mesh ref={sphereRef} >
         <sphereGeometry args={[0.1, 32, 32]} />
         <meshBasicMaterial color={0xffffff} />
       </mesh>
