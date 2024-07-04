@@ -1,0 +1,20 @@
+* {
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .navbtn{
+    font-size: 18px;
+    color: white;
+    padding: 2rem 1rem 1rem 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .navbtn:hover{
+    color: red;
+    transform: translateY(1px);
+  }
+  
+.gradient{
+  background-image: radial-gradient(ellipse at bottom, #1b2735 15%, #090a0f 100%)
+}
