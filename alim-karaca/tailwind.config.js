@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-gradient': 'radial-gradient(ellipse at bottom, #1b2735 50%, #090a0f 100%)',
+        'custom-gradient': 'radial-gradient(ellipse at bottom, #1b2735 60%, #090a0f 100%)',
       },
     },
   },

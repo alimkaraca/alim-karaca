@@ -16,7 +16,7 @@
   }
   
 .gradient{
-  background-image: radial-gradient(ellipse at bottom, #1b2735 15%, #090a0f 100%)
+  background-image: radial-gradient(ellipse at bottom, #1b2735 50%, #090a0f 100%)
 }
 
 .designsvg {
@@ -26,4 +26,38 @@
 .designshadow{
 
   text-shadow: 2px 8px 20px #16A34A;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e5ebff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #a38aff;
+}
+::-webkit-scrollbar-track {
+  background: #192339;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #192330;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
