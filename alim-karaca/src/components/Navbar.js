@@ -24,12 +24,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full grid grid-cols-2'>
+    <div className='w-full grid grid-cols-2 fixed z-10 backdrop-blur-md'>
     <p className='text-white pl-32 pt-6 text-3xl select-none'>
-      alim_karaca
+      alim_karaca.
     </p>
     <div className='flex justify-end text-center'>
-    <button className='navbtn'>home/</button>
+    <button onClick={handleScrollToHome} className='navbtn'>home/</button>
     <button onClick={handleScrollToSkills} className='navbtn'>skills/</button>
     <button onClick={handleScrollToWork} className='navbtn'>work/</button>
     <button onClick={handleScrollToExperience} className='navbtn'>experience/</button>

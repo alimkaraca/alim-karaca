@@ -8,7 +8,9 @@ import Work from './components/Work';
 const App = () => (
   <div className='gradient overflow-x-hidden'>
     <Navbar />
+    <div id='home-section'>
     <Home />
+    </div>
     <div id='skills-section'>
     <Skills />
     </div>
