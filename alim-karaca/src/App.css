@@ -61,3 +61,16 @@
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+.whatorder{
+  background-image: url(./assets/whatorderbanner.png);
+  background-size: cover;
+  background-repeat: none;
+  width: 426px;
+  height: 240px;
+}
+
+.whatorder:hover{
+  background-image: url(./assets/whatorder.gif);
+  cursor: pointer;
+}

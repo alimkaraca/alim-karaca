@@ -1,5 +1,6 @@
 import React from 'react'
-import WhatOrder from '../assets/whatorderbanner.png'
+import GithubLogo from '../assets/github.png'
+
 
 const Work = () => {
   return (
@@ -10,9 +11,14 @@ const Work = () => {
             <p className='text-white text-xl pt-52'>Also see my Github for all the projects I have done.</p>
         </main>
         <main className='pt-52 pl-24'>
-        <a href="https://whatorder.vercel.app/" target="_blank">
-            <img className='w-96 mt-24 rounded-lg hover:scale-105 transition duration-200' src={WhatOrder} alt="What Order Logo" />
-            </a>
+      <a href="https://whatorder.vercel.app/" target='_blank' rel='noreferrer'>
+            <div className='mt-24 rounded-lg hover:scale-105 transition duration-200 whatorder'>
+            </div>
+      </a>
+      <a href="https://github.com/mehrfarben" target='_blank' rel='noreferrer'>
+      <img className='mt-12 rounded-lg hover:scale-105 transition duration-200' src={GithubLogo} alt="Github Logo" />
+
+      </a>
         </main>
     </div>
   )
