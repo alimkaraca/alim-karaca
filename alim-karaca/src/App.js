@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 
 const App = () => (
-  <div className='gradient overflow-x-hidden'>
+  <div className='overflow-hidden'>
     <Navbar />
     <div id='home-section'>
     <Home />

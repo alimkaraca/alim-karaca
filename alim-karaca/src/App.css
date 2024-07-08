@@ -2,6 +2,12 @@
     font-family: "Roboto Mono", monospace;
   }
 
+  canvas{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
   .navbtn{
     font-size: 18px;
     color: white;
@@ -10,13 +16,22 @@
     user-select: none;
   }
 
+  body{
+    background-color: #151E29;
+  }
+
   .navbtn:hover{
     color: red;
     transform: translateY(1px);
   }
   
 .gradient{
-  background-image: radial-gradient(ellipse at bottom, #1b2735 50%, #090a0f 100%)
+  background-image: linear-gradient(
+    0deg,
+    hsl(215deg 31% 12%) 0%,
+    hsl(215deg 31% 14%) 50%,
+    hsl(215deg 32% 16%) 100%
+  );
 }
 
 .designsvg {
@@ -73,4 +88,21 @@
 .whatorder:hover{
   background-image: url(./assets/whatorder.gif);
   cursor: pointer;
+}
+
+.mockup-container {
+  position: relative;
+}
+
+.mockup-image {
+  width: 100%; 
+}
+
+.mockup-screen {
+  position: absolute;
+  top: 10%; 
+  left: 19%; 
+  width: 62%; 
+  height: 66%; 
+  border: none;
 }

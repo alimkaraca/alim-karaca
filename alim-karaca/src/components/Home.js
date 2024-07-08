@@ -3,8 +3,8 @@ import Cube from './Cube'
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen grid grid-cols-2">
-    <div className='overflow-y-hidden relative bottom-10 left-14' >
+    <div className="h-screen w-screen pt-12 grid grid-cols-2 gradient">
+    <div className=' relative bottom-10 left-14' >
     <Cube />
       </div>
       <div className='flex flex-col justify-center items-start select-none pb-16'> 
