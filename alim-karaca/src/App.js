@@ -4,6 +4,7 @@ import './index.css';
 import Home from './components/Home';
 import Skills from './components/Skills';
 import Work from './components/Work';
+import Experience from './components/Experience';
 
 const App = () => (
   <div className='overflow-hidden'>
@@ -17,7 +18,9 @@ const App = () => (
     <div id='work-section'>
     <Work />
     </div>
-    <div id='experience-section'></div>
+    <div id='experience-section'>
+      <Experience/>
+    </div>
     <div id='contact-section'></div>
   </div>
 );
