@@ -5,8 +5,10 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Experience from './components/Experience';
+import RadialGradientMover from './components/MouseGradient';
 
 const App = () => (
+  <RadialGradientMover>
   <div className='overflow-hidden'>
     <Navbar />
     <div id='home-section'>
@@ -23,6 +25,7 @@ const App = () => (
     </div>
     <div id='contact-section'></div>
   </div>
+  </RadialGradientMover>
 );
 
 export default App;
