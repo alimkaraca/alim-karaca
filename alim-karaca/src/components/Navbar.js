@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full grid grid-cols-2 fixed z-10 backdrop-blur-md'>
-    <p className='text-white pl-12 pt-6 text-3xl select-none'>
+    <p className='text-white p-4 lg:pl-12 lg:pt-6 text-3xl select-none'>
       alim_karaca.
     </p>
     <main className='hidden lg:flex justify-end text-center '>

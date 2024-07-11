@@ -9,20 +9,20 @@ const Skills = () => {
 
 <div className='flex justify-center'>
 
-    <main className='border-2 w-2/5 h-auto border-gray-500'>
+    <main className='border-2 w-2/3 h-auto border-gray-500'>
     <section className='flex justify-center items-center text-start pt-8 '>
       <img className='reactsvg' src={ReactLogo} alt="React Logo" />
-      <h1 className='text-lg md:text-2xl font-semibold text-gray-200'>Front-End Developer</h1>
+      <h1 className='text-md md:text-2xl font-semibold text-gray-200'>Front-End Developer</h1>
       </section>
-    <p className='text-md md:text-xl p-6 text-gray-200'>I'm love building things from ground up and bringing my ideas to life. I have 2 years of development experience in HTML, CSS, JS and React.</p>
+    <p className='text-sm md:text-xl p-6 text-gray-200'>I'm love building things from ground up and bringing my ideas to life. I have 2 years of development experience in HTML, CSS, JS and React.</p>
     </main>
 
-    <main className='border-2 border-l-0 w-2/5 h-auto border-gray-500'>
+    <main className='border-2 border-l-0 w-2/3 h-auto border-gray-500'>
     <section className='flex justify-center items-center text-start pt-8 '>
       <img className='designsvg' src={DesignSVG} alt="Design Icon" />
-      <h1 className='text-lg md:text-xl font-semibold text-gray-200'>Designer</h1>
+      <h1 className='text-md lg:text-xl font-semibold text-gray-200'>Designer</h1>
       </section>
-    <p className='text-md md:text-xl p-6 text-gray-200'>I'm passionate about UI/UX and design in general. I'm proficient in using Photoshop, Illustrator, Sketch, Figma and Canva.</p>
+    <p className='text-sm md:text-xl p-6 text-gray-200'>I'm passionate about UI/UX and design in general. I'm proficient in using Photoshop, Illustrator, Sketch, Figma and Canva.</p>
     </main>
 
     </div>

@@ -36,8 +36,8 @@ const ProfessionalExperience = () => {
 
   return (
     <div className='flex flex-col justify-center items-center py-56 h-full w-screen'>
-      <h1 className='text-6xl lg:text-8xl text-gray-200 pb-7 font-extrabold text-center'>My Experience</h1>
-      <div className="p-8 text-white w-5/6">
+      <h1 className='text-5xl lg:text-8xl text-gray-200 pb-7 font-extrabold text-center'>My Experience</h1>
+      <div className="p-8 text-white w-11/12">
         {experienceData.map(({ key, title, date, location, description, technologies }) => (
           <div
             key={key}
