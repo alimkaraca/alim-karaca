@@ -1,4 +1,5 @@
 import React from 'react'
+import HamburgerMenu from './HamburgerButton';
 
 const Navbar = () => {
 
@@ -25,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full grid grid-cols-2 fixed z-10 backdrop-blur-md'>
-    <p className='text-white p-4 lg:pl-12 lg:pt-6 text-3xl select-none'>
+    <p onClick={handleScrollToHome} className='text-white p-4 lg:pl-12 lg:pt-6 text-3xl select-none cursor-pointer hover:translate-x-4 duration-150 hover:text-red-600 active:translate-x-5 active:text-blue-600'>
       alim_karaca.
     </p>
     <main className='hidden lg:flex justify-end text-center '>
@@ -37,8 +38,8 @@ const Navbar = () => {
     </main>
 
     <main className='flex justify-end lg:hidden'>
-      <section className='text-white pr-12 pt-6'>
-button
+      <section className='text-white'>
+<HamburgerMenu/>
       </section>
     </main>
     </div>

@@ -36,18 +36,18 @@ const ProfessionalExperience = () => {
 
   return (
     <div className='flex flex-col justify-center items-center py-56 h-full w-screen'>
-      <h1 className='text-5xl lg:text-8xl text-gray-200 pb-7 font-extrabold text-center'>My Experience</h1>
-      <div className="p-8 text-white w-11/12">
+      <h1 className='text-4xl lg:text-8xl text-gray-200 pb-7 font-extrabold text-center'>My Experience</h1>
+      <div className="p-8 text-white w-11/12 md:w-3/5 lg:2/3">
         {experienceData.map(({ key, title, date, location, description, technologies }) => (
           <div
             key={key}
             onClick={() => toggleOpen(key)}
-            className={`p-6 rounded-lg mb-4 cursor-pointer ${openKey === key ? 'bg-green-600' : 'bg-green-700'}`}
+            className={`p-6 rounded-lg mb-4 cursor-pointer ${openKey === key ? 'bg-green-600' : 'bg-green-800'}`}
           >
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-xl font-semibold">{title}</p>
-                <p className="text-sm">{date}</p>
+                <p className="text-xl text-white font-semibold">{title}</p>
+                <p className="text-sm text-gray-200">{date}</p>
               </div>
               <span className="pl-8 text-xl font-extrabold">{openKey === key ? '-' : '+'}</span>
             </div>
@@ -55,10 +55,10 @@ const ProfessionalExperience = () => {
               className={`transition-max-height duration-700 ease-in-out overflow-hidden ${openKey === key ? 'max-h-screen' : 'max-h-0'}`}
             >
               <div className="mt-4 bg-gray-800 p-4 rounded-lg">
-                {location && <p className='font-bold'>{location}</p>}
-                {key === 'firstExp' && <a href='https://dabad.org' target='_blank' rel="noreferrer" className='pointer'>dabad.org</a>}
-                {key === 'thirdExp' && <a href='https://newmind.ai' target='_blank' rel="noreferrer" className='pointer'>newmind.ai</a>}
-                <p>{description}</p>
+                {location && <p className='text-red-400 font-bold pb-1'>{location}</p>}
+                {key === 'firstExp' && <a href='https://dabad.org' target='_blank' rel="noreferrer" className='pointer text-blue-400'>dabad.org</a>}
+                {key === 'thirdExp' && <a href='https://newmind.ai' target='_blank' rel="noreferrer" className='pointer text-blue-400'>newmind.ai</a>}
+                <p className='pt-2'>{description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {technologies.map((technology) => (
                     <span key={technology} className="bg-blue-700 text-white px-2 py-1 rounded">{technology}</span>

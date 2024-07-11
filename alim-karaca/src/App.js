@@ -1,10 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import './index.css';
-import Home from './components/Home';
-import Skills from './components/Skills';
-import Work from './components/Work';
-import Experience from './components/Experience';
+import Home from './pages/Home';
+import Skills from './pages/Skills';
+import Work from './pages/Work';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
 import RadialGradientMover from './components/MouseGradient';
 
 const App = () => (
@@ -23,7 +24,9 @@ const App = () => (
     <div id='experience-section'>
       <Experience/>
     </div>
-    <div id='contact-section'></div>
+    <div id='contact-section'>
+      <Contact/>
+    </div>
   </div>
   </RadialGradientMover>
 );

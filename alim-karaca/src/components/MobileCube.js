@@ -27,17 +27,17 @@ const MouseCube = () => {
     <mesh>
       <lineSegments
         ref={outerCubeRef}
-        geometry={new EdgesGeometry(new BoxGeometry(3, 3, 3))}
+        geometry={new EdgesGeometry(new BoxGeometry(2.3, 2.3, 2.3))}
         material={new LineBasicMaterial({ color: 0xff0000 })}
       />
       <lineSegments
         ref={middleCubeRef}
-        geometry={new EdgesGeometry(new BoxGeometry(2, 2, 2))}
+        geometry={new EdgesGeometry(new BoxGeometry(1.5, 1.5, 1.5))}
         material={new LineBasicMaterial({ color: 0x00ff00 })}
       />
       <lineSegments
         ref={innerCubeRef}
-        geometry={new EdgesGeometry(new BoxGeometry(1, 1, 1))}
+        geometry={new EdgesGeometry(new BoxGeometry(0.75, 0.75, 0.75))}
         material={new LineBasicMaterial({ color: 0x0000ff })}
       />
     </mesh>

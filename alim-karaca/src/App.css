@@ -23,8 +23,14 @@
   }
 
   .navbtn:hover{
-    color: red;
+    color: #dc2626;
+    transition: 250ms;
+  }
+
+  .navbtn:active{
+    color: #2563eb;
     transform: translateY(1px);
+    transition: 250ms;
   }
 
 .designsvg {
@@ -86,4 +92,12 @@
   width: 62%; 
   height: 66%; 
   border: none;
+}
+
+.bg-circle-half {
+  background: radial-gradient(circle at bottom, #233043 50%, transparent 50%);
+}
+
+.bg-circle-full {
+  background: radial-gradient(circle, #233043 50%, transparent 50%);
 }
