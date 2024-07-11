@@ -27,8 +27,9 @@ const RadialGradientMover = ({ children }) => {
     position: 'fixed',
     top: 0,
     left: 0,
-    zIndex: -1,
-    pointerEvents: 'none' 
+    zIndex: -1000,
+    pointerEvents: 'none',
+    overflow: 'hidden',
   };
 
   return (
