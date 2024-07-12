@@ -58,7 +58,7 @@ const ProfessionalExperience = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
           transition={{ duration: 0.2 }}>
-          <h1 className='text-4xl lg:text-7xl text-gray-200 pb-7 lg:pl-0 font-extrabold text-start'>Professional Experience</h1>
+          <h1 className='text-4xl lg:text-6xl text-gray-200 pl-12 sm:pl-0 md:px-6 font-extrabold text-start'>Professional Experience</h1>
         </motion.div>
 
         <div className="p-8 text-white w-11/12 md:w-3/5 lg:2/3">
