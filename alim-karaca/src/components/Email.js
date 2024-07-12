@@ -9,7 +9,6 @@ const EmailForm = () => {
   const serviceId = process.env.REACT_APP_MAIL_SERVICE_ID;
   const templateId = process.env.REACT_APP_MAIL_TEMPLATE_ID;
   const publicKey = process.env.REACT_APP_MAIL_PUBLIC_KEY;
-  console.log(serviceId, templateId, publicKey);
 
   const handleSubmit = (e) => {
     e.preventDefault();
