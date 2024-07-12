@@ -48,7 +48,7 @@ const EmailForm = () => {
       <form className='w-4/5 lg:w-2/3' onSubmit={handleSubmit}>
         <div>
           <input 
-            className='w-full rounded bg-gray-200 mt-4 p-2'
+            className='w-full rounded bg-gray-200 mt-4 p-2 outline-none'
             placeholder='your email'
             type="email"
             name="email"
@@ -59,7 +59,7 @@ const EmailForm = () => {
         </div>
         <div>
           <textarea 
-            className='w-full rounded bg-gray-200 mt-4 p-2'
+            className='w-full rounded bg-gray-200 mt-4 p-2 outline-none'
             placeholder='your message'
             name="message"
             value={message}
