@@ -36,11 +36,13 @@
 .designsvg {
   width: 70px;
   margin: 0.75rem;
+  margin-left: 1rem;
 }
 .reactsvg {
   width: 70px;
   height: 70px;
   margin: 0.75rem;
+  margin-left: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -102,6 +104,7 @@
   background: radial-gradient(circle, #233043 50%, transparent 50%);
 }
 
-.up{
-  z-index: 10000;
+.no-scroll {
+  overflow: hidden;
 }
+

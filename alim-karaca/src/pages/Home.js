@@ -4,11 +4,18 @@ import MobileCube from '../components/MobileCube'
 import { motion } from "framer-motion"
 
 const Home = () => {
+
+
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center text-center lg:grid grid-cols-2 xl:text-start">
-    <div className='block -z-10 w-full absolute xl:hidden lg:relative'>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      delay={1}
+      transition={{ delay: 1.5, duration: 1.5 }} 
+      className='block -z-10 w-full absolute xl:hidden lg:relative'>
       <MobileCube/>
-    </div>
+    </motion.div>
     <div className='hidden xl:block'>
     <Cube/>
       </div>
@@ -21,9 +28,15 @@ const Home = () => {
       <p className='hidden text-start lg:block font-extrabold text-red-600 text-5xl pb-4'>Hi, I'm Alim Karaca</p>
       </motion.div>
 
+      <motion.div 
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      delay={1}
+      transition={{duration: 1 }} >
       <p className='block lg:hidden font-extrabold text-white text-5xl  pb-4'>
 ALIM KARACA
       </p>
+      </motion.div>
 
       <motion.div 
   initial={{ opacity: 0, x: -40 }}
@@ -32,9 +45,16 @@ ALIM KARACA
       <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>I'm a UI/UX designer & front-end developer</p>
       </motion.div>
 
+
+      <motion.div
+      initial={{ opacity: 0, y: -40}}
+      animate={{ opacity: 1, y: 0}}
+      delay={1}
+      transition={{duration: 1 }}>
       <p className='block lg:hidden text-white text-2xl px-4 pb-4'>
 UI/UX DESIGNER & <br /> FRONTEND DEVELOPER
       </p>
+      </motion.div>
 
       <motion.div 
   initial={{ opacity: 0, x: -60 }}
