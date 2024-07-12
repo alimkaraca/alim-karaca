@@ -6,10 +6,12 @@ import Skills from './pages/Skills';
 import Work from './pages/Work';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
+import HamburgerMenu from './components/HamburgerButton';
 import RadialGradientMover from './components/MouseGradient';
 
 const App = () => (
   <RadialGradientMover>
+  <HamburgerMenu/>
   <div className='overflow-hidden'>
     <Navbar />
     <div id='home-section'>

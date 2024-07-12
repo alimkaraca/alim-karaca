@@ -101,3 +101,7 @@
 .bg-circle-full {
   background: radial-gradient(circle, #233043 50%, transparent 50%);
 }
+
+.up{
+  z-index: 10000;
+}

@@ -35,8 +35,8 @@ const ProfessionalExperience = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center items-center py-56 h-full w-screen'>
-      <h1 className='text-4xl lg:text-8xl text-gray-200 pb-7 font-extrabold text-center'>My Experience</h1>
+    <div className='flex flex-col justify-center items-center pt-32 pb-28 h-full w-screen'>
+      <h1 className='text-4xl lg:text-7xl text-gray-200 pb-7 pl-12 lg:pl-0 font-extrabold text-start'>Proffessional Experience</h1>
       <div className="p-8 text-white w-11/12 md:w-3/5 lg:2/3">
         {experienceData.map(({ key, title, date, location, description, technologies }) => (
           <div
@@ -46,7 +46,7 @@ const ProfessionalExperience = () => {
           >
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-xl text-white font-semibold">{title}</p>
+                <p className="text-lg lg:text-xl text-white font-semibold">{title}</p>
                 <p className="text-sm text-gray-200">{date}</p>
               </div>
               <span className="pl-8 text-xl font-extrabold">{openKey === key ? '-' : '+'}</span>
@@ -58,10 +58,10 @@ const ProfessionalExperience = () => {
                 {location && <p className='text-red-400 font-bold pb-1'>{location}</p>}
                 {key === 'firstExp' && <a href='https://dabad.org' target='_blank' rel="noreferrer" className='pointer text-blue-400'>dabad.org</a>}
                 {key === 'thirdExp' && <a href='https://newmind.ai' target='_blank' rel="noreferrer" className='pointer text-blue-400'>newmind.ai</a>}
-                <p className='pt-2'>{description}</p>
+                <p className='pt-2 text-sm'>{description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {technologies.map((technology) => (
-                    <span key={technology} className="bg-blue-700 text-white px-2 py-1 rounded">{technology}</span>
+                    <span key={technology} className="bg-blue-700 text-xs text-white px-2 py-1 rounded">{technology}</span>
                   ))}
                 </div>
               </div>

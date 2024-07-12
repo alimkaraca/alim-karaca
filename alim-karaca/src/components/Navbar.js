@@ -1,5 +1,4 @@
 import React from 'react'
-import HamburgerMenu from './HamburgerButton';
 
 const Navbar = () => {
 
@@ -39,7 +38,7 @@ const Navbar = () => {
 
     <main className='flex justify-end lg:hidden'>
       <section className='text-white'>
-<HamburgerMenu/>
+
       </section>
     </main>
     </div>
