@@ -8,7 +8,7 @@ const Skills = () => {
   
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,  
+    threshold: 0.2,  
   });
 
   return (
@@ -18,7 +18,7 @@ const Skills = () => {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
       transition={{ duration: 0.5 }}
-      className='flex flex-col justify-center items-center w-full h-full pt-32 pb-16'>
+      className='flex flex-col justify-center items-center w-full h-full pt-0 lg:pt-32 pb-16'>
       <div className='text-5xl lg:text-6xl xl:text-8xl text-gray-200 font-extrabold select-none'>My Skills</div>
       </motion.div>
 

@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const ProfessionalExperience = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   const [openKey, setOpenKey] = useState(null);
