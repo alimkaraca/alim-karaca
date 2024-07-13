@@ -4,7 +4,7 @@ import Ben from '../assets/ben.png'
 const Links = () => {
 
   const openPdf = () => {
-    window.open('/assets/cv.pdf', '_blank');
+    window.open('/AlimKaracaCV.pdf', '_blank');
   };
 
   return (
