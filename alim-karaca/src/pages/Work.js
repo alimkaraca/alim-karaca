@@ -1,15 +1,32 @@
 import React from 'react'
 import Cesni from '../assets/cesnimockup.png'
 import WhatOrder from '../assets/whatordermockup2.png'
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Work = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,  
+  });
+
   return (
     <>
     <main className='min-h-screen w-screen flex flex-col justify-center items-center'>
-        <div className='text-5xl lg:text-6xl xl:text-8xl text-gray-200 font-extrabold select-none pb-12'>My Work</div>
-            <main className=' flex justify-center items-center flex-col xl:flex-row gap-10 w-full lg:w-4/6'>
+    <motion.div
+    ref={ref}
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+      transition={{ duration: 0.5 }}
+       className='text-5xl lg:text-6xl xl:text-8xl text-gray-200 font-extrabold select-none pb-12'>My Work
+       </motion.div>
 
-              
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+              transition={{ duration: 1 }} 
+              className=' flex justify-center items-center flex-col xl:flex-row gap-10 w-full lg:w-4/6'>
                 <section className='h-[450px] group hover:cursor-pointer w-11/12 md:w-2/4 bg-gray-900 overflow-hidden'>
                 <a href="https://github.com/mehrfarben/recipe-app" target='_blank' rel="noreferrer">
                     <div className='h-[300px] object-cover overflow-hidden'>
@@ -35,11 +52,14 @@ const Work = () => {
                     </div>
                     </a>
                 </section>
-
-                
-
-            </main>
-            <p className='text-[#e5e7eb] text-xl px-6 py-16'>Also see my <a href="https://github.com/mehrfarben" target='_blank' rel="noreferrer" className="text-[#dc2626] underline">GitHub</a> for all the projects I have worked on.</p>
+                </motion.div>
+                <motion.div
+              ref={ref}
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+              transition={{ duration: 1 }} >
+            <p className='text-[#e5e7eb] text-xl px-6 pt-16 lg:py16'>Also see my <a href="https://github.com/mehrfarben" target='_blank' rel="noreferrer" className="text-[#dc2626] underline">GitHub</a> for all the projects I have worked on.</p>
+    </motion.div>
     </main>
 
     
