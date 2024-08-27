@@ -16,28 +16,28 @@ const ProfessionalExperience = () => {
 
   const experienceData = [
     {
-      key: 'firstExp',
-      title: 'Crypto & Web Developer',
-      date: '2021 - 2022',
-      location: 'Remote',
-      description: 'Developed smart contracts and their websites for several successful crypto projects.',
-      technologies: ['Solidity', 'React JS', 'CSS', 'Wix'],
+      key: 'thirdExp',
+      title: 'Full-Stack Developer at New Mind AI',
+      date: 'Feb 2024 - Present',
+      location: 'Istanbul / Turkiye',
+      description: 'Worked on bug fixes and new features on both the front-end and back-end for the company\'s web applications that facilitate legal processes using React JS and Node.js.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React JS', 'Node.js', 'Express.js', 'MongoDB', 'Python'],
     },
     {
       key: 'secondExp',
       title: 'Designer & Social Media Manager at DABAD',
-      date: '2023 - Present',
+      date: 'Nov 2023 - Present',
       location: 'Remote',
       description: 'Designed and managed the association\'s all social media accounts. I also did the filming and editing of the videos for the association\'s YouTube channel.',
       technologies: ['Photoshop', 'Figma', 'Canva', 'DaVinci Resolve'],
     },
     {
-      key: 'thirdExp',
-      title: 'Front-end Developer at New Mind AI',
-      date: '2024 - Present',
-      location: 'Istanbul / Turkiye',
-      description: 'Worked on bug fixes and new features on both the front-end and back-end for the company\'s web applications that facilitate legal processes using React JS and Node.js.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React JS', 'Node.js'],
+      key: 'firstExp',
+      title: 'Crypto & Web Developer',
+      date: 'May 2021 - Apr 2022',
+      location: 'Remote',
+      description: 'Developed smart contracts and their websites for several successful crypto projects.',
+      technologies: ['Solidity', 'React JS', 'CSS', 'Wix'],
     },
   ];
 
@@ -52,7 +52,7 @@ const ProfessionalExperience = () => {
 
   return (
     <>
-      <div className='flex flex-col justify-center items-center pt-32 pb-28 h-full w-screen select-none'>
+      <div className='flex flex-col justify-center h-screen items-center  w-screen select-none'>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: -30 }}

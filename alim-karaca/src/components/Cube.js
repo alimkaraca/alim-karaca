@@ -1,7 +1,7 @@
 // src/components/MouseCube.js
 import React, { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { BoxGeometry, EdgesGeometry, LineSegments, LineBasicMaterial, MeshBasicMaterial, Mesh, SphereGeometry } from 'three';
+import { BoxGeometry, EdgesGeometry, LineBasicMaterial } from 'three';
 
 const lerp = (start, end, t) => {
   return start + (end - start) * t;

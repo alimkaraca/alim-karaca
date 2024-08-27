@@ -25,7 +25,7 @@ const Home = () => {
   initial={{ opacity: 0, x: -20 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.5 }}>
-      <p className='hidden text-start lg:block font-extrabold text-red-600 text-5xl pb-4'>Hi, I'm Alim Karaca</p>
+      <p className='hidden text-start lg:block font-extrabold text-red-600 text-5xl pb-4'>Hi, I'm Alim Karaca </p>
       </motion.div>
 
       <motion.div 
@@ -42,7 +42,7 @@ ALIM KARACA
   initial={{ opacity: 0, x: -40 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.7 }}>
-      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>I'm a UI/UX designer & front-end developer</p>
+      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>Full-Stack Web Developer & Web Crawler & UI/UX designer </p>
       </motion.div>
 
 
@@ -52,7 +52,7 @@ ALIM KARACA
       delay={1}
       transition={{duration: 1 }}>
       <p className='block lg:hidden text-white text-2xl px-4 pb-4'>
-UI/UX DESIGNER & <br /> FRONTEND DEVELOPER
+UI/UX DESIGNER & <br /> FULLSTACK DEVELOPER & <br /> WEB CRAWLER
       </p>
       </motion.div>
 
