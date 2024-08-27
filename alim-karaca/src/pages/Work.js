@@ -1,6 +1,7 @@
 import React from 'react'
 import Cesni from '../assets/cesnimockup.png'
 import WhatOrder from '../assets/whatordermockup2.png'
+import WhatOrderMobile from '../assets/whatordermockup.png'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -43,7 +44,8 @@ const Work = () => {
                 <section className='h-[450px] group hover:cursor-pointer w-11/12 md:w-2/4 xl:w-2/3 bg-gray-900 overflow-hidden'>
                 <a href="https://whatorder.vercel.app/" target='_blank' rel="noreferrer">
                   <div className='group h-[300px] overflow-hidden'>
-                    <img src={WhatOrder} className='h-[300px] w-full object-contain xl:object-cover group-hover:scale-105 transition duration-300' alt="" />
+                    <img src={WhatOrder} className='h-[300px] w-full hidden xl:block object-contain xl:object-cover group-hover:scale-105 transition duration-300' alt="" />
+                    <img src={WhatOrderMobile} className='h-[300px] block xl:hidden w-full object-cover group-hover:scale-105 transition duration-300' alt="" />
                   </div>
                   <div className='relative flex flex-col justify-between min-h-[150px] text-[#e5e7eb] p-6'>
                         <h1 className='text-2xl font-bold'>What Order</h1>
