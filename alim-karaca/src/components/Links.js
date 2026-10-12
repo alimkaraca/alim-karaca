@@ -17,7 +17,6 @@ const Links = () => {
 
         <main className='flex flex-col justify-center w-full lg:w-full xl:w-1/2 h-full py-12 bg-green-600 text-center text-white text-xl font-semibold gap-4'>
         <a className='hover:text-gray-300' href="https://www.linkedin.com/in/alimkaraca/" target='_blank' rel="noreferrer">LinkedIn</a>
-        <a className='hover:text-gray-300' href="https://www.instagram.com/alim.png/" target='_blank' rel="noreferrer">Instagram</a>
         <a className='hover:text-gray-300' href="https://github.com/mehrfarben" target='_blank' rel="noreferrer">GitHub</a>
         <button className='hover:text-gray-300' onClick={openPdf}>My CV</button>
 

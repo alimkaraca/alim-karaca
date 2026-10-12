@@ -16,9 +16,17 @@ const ProfessionalExperience = () => {
 
   const experienceData = [
     {
+      key: 'fourthExp',
+      title: 'Logistics Operations Coordinator',
+      date: 'November 2025 - Present',
+      location: 'Istanbul / Turkiye',
+      description: 'Handling end-to-end logistics operations for vessel spare parts. From the supplier to the vessel.',
+      technologies: [''],
+    },
+    {
       key: 'thirdExp',
       title: 'Full-Stack Developer at New Mind AI',
-      date: 'Feb 2024 - Present',
+      date: 'February 2024 - August 2025',
       location: 'Istanbul / Turkiye',
       description: 'Worked on bug fixes and new features on both the front-end and back-end for the company\'s web applications that facilitate legal processes using React JS and Node.js.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'React JS', 'Node.js', 'Express.js', 'MongoDB', 'Python'],
@@ -26,7 +34,7 @@ const ProfessionalExperience = () => {
     {
       key: 'secondExp',
       title: 'Designer & Social Media Manager at DABAD',
-      date: 'Nov 2023 - Present',
+      date: 'November 2023 - February 2025',
       location: 'Remote',
       description: 'Designed and managed the association\'s all social media accounts. I also did the filming and editing of the videos for the association\'s YouTube channel.',
       technologies: ['Photoshop', 'Figma', 'Canva', 'DaVinci Resolve'],
@@ -34,7 +42,7 @@ const ProfessionalExperience = () => {
     {
       key: 'firstExp',
       title: 'Crypto & Web Developer',
-      date: 'May 2021 - Apr 2022',
+      date: 'May 2021 - April 2022',
       location: 'Remote',
       description: 'Developed smart contracts and their websites for several successful crypto projects.',
       technologies: ['Solidity', 'React JS', 'CSS', 'Wix'],
@@ -70,7 +78,7 @@ const ProfessionalExperience = () => {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               variants={variants}
-              className={`p-6 rounded-lg mb-4 hover:bg-green-600 ${openKey === key ? 'bg-green-600' : 'bg-green-700'}`}
+              className={`p-6 rounded-lg mb-4 cursor-pointer hover:bg-green-600 ${openKey === key ? 'bg-green-600' : 'bg-green-700'}`}
               onClick={() => toggleOpen(key)}
             >
               <div className="flex justify-between items-center">

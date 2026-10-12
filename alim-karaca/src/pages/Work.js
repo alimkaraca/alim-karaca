@@ -8,12 +8,12 @@ import { useInView } from 'react-intersection-observer';
 const Work = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,  
+    threshold: 0.2,
   });
 
   return (
     <>
-    <main className='min-h-screen w-screen flex flex-col justify-center items-center'>
+    <main className='w-screen flex flex-col justify-center items-center'>
     <motion.div
     ref={ref}
       initial={{ opacity: 0, y: -30 }}
@@ -26,7 +26,7 @@ const Work = () => {
               ref={ref}
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
-              transition={{ duration: 1 }} 
+              transition={{ duration: 1 }}
               className=' flex justify-center items-center flex-col xl:flex-row gap-10 w-full lg:w-4/6'>
                 <section className='h-[450px] group hover:cursor-pointer w-11/12 md:w-2/4 bg-gray-900 overflow-hidden'>
                 <a href="https://github.com/mehrfarben/recipe-app" target='_blank' rel="noreferrer">
@@ -64,7 +64,7 @@ const Work = () => {
     </motion.div>
     </main>
 
-    
+
 
   </>
   )

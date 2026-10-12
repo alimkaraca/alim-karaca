@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='grid xs:grid-rows-2 lg:grid-cols-2 h-full w-screen'>
 
-        <main className=''>
+        <main className=''>adasd
             <Links/>
         </main>
 
