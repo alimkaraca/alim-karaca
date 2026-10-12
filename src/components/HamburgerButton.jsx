@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
     } else {
       document.body.classList.remove('no-scroll');
     }
-    
+
     return () => {
       document.body.classList.remove('no-scroll');
     };
@@ -27,9 +27,9 @@ const HamburgerMenu = () => {
   };
 
   return (
-    
+
     <div className='fixed right-0 top-0 z-50 lg:hidden'>
-    <motion.div 
+    <motion.div
     initial={{ x: 80 }}
     animate={{ x: 0 }}
     transition={{ duration: 0.5 }}>
@@ -64,11 +64,11 @@ const HamburgerMenu = () => {
               </svg>
             </button>
             <nav className="space-y-10 text-white text-start text-xl font-bold flex flex-col">
-              <button onClick={() => scrollToSection('home-section')} className='text-start'>//home</button>
-              <button onClick={() => scrollToSection('skills-section')} className='text-start'>//skills</button>
-              <button onClick={() => scrollToSection('work-section')} className='text-start'>//work</button>
-              <button onClick={() => scrollToSection('experience-section')} className='text-start'>//experience</button>
-              <button onClick={() => scrollToSection('contact-section')} className='text-start'>//contact</button>
+              <button onClick={() => scrollToSection('home-section')} className='text-start'>/home</button>
+              <button onClick={() => scrollToSection('skills-section')} className='text-start'>/skills</button>
+              <button onClick={() => scrollToSection('work-section')} className='text-start'>/work</button>
+              <button onClick={() => scrollToSection('experience-section')} className='text-start'>/experience</button>
+              <button onClick={() => scrollToSection('contact-section')} className='text-start'>/contact</button>
             </nav>
           </motion.div>
         )}

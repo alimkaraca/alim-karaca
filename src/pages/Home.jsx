@@ -12,23 +12,23 @@ const Home = () => {
       initial={{ opacity: 0}}
       animate={{ opacity: 1}}
       delay={1}
-      transition={{ delay: 1.5, duration: 1.5 }} 
+      transition={{ delay: 1.5, duration: 1.5 }}
       className='block -z-10 w-full absolute xl:hidden lg:relative'>
       <MobileCube/>
     </motion.div>
     <div className='hidden xl:block'>
     <Cube/>
       </div>
-      <div className='flex flex-col justify-center text-center select-none'> 
+      <div className='flex flex-col justify-center text-center select-none'>
 
-      <motion.div 
+      <motion.div
   initial={{ opacity: 0, x: -20 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.5 }}>
       <p className='hidden text-start lg:block font-extrabold text-red-600 text-5xl pb-4'>Hi, I'm Alim Karaca </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       delay={1}
@@ -38,30 +38,20 @@ ALIM KARACA
       </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
   initial={{ opacity: 0, x: -40 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.7 }}>
-      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>Full-Stack Web Developer & Web Crawler & UI/UX designer </p>
+      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>Full-Stack Web Developer</p>
       </motion.div>
 
-
+{/*
       <motion.div
-      initial={{ opacity: 0, y: -40}}
-      animate={{ opacity: 1, y: 0}}
-      delay={1}
-      transition={{duration: 1 }}>
-      <p className='block lg:hidden text-white text-2xl px-4 pb-4'>
-UI/UX DESIGNER & <br /> FULLSTACK DEVELOPER & <br /> WEB CRAWLER
-      </p>
-      </motion.div>
-
-      <motion.div 
   initial={{ opacity: 0, x: -60 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1 }}>
       <p className='text-white hidden text-start lg:block font-extrabold text-lg lg:text-blue-600 lg:text-3xl'>Let's make your dreams a reality</p>
-      </motion.div>
+      </motion.div>*/}
 
       </div>
     </div>
