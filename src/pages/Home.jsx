@@ -42,7 +42,7 @@ ALIM KARACA
   initial={{ opacity: 0, x: -40 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.7 }}>
-      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>Full-Stack Web Developer</p>
+      <p className='text-white hidden text-start lg:block font-extrabold text-sm lg:text-green-600 lg:text-xl pb-6'>Web Developer & Tinkerer</p>
       </motion.div>
 
 {/*
